@@ -4,8 +4,8 @@
 }
 
 window {
-  /* background-image: ; */
-  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/home/pritam/Pictures/Wallpaper/wallpaper.jpg");
+  background-color: rgba(0, 0, 0, 0.80);
   opacity: 0.85;
   /* heigth: 500px; */
   /* width: 700px; */
@@ -16,7 +16,7 @@ button {
   border-color: black;
   text-decoration-color: #55ad9b;
   color: #fff;
-  background-color: #1e1e1e;
+  background-color: rgba(0,0,0,0.70);
   border-style: solid;
   border-width: 5px;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ button {
 button:focus,
 button:active,
 button:hover {
-  background-color: #777777;
+  background-color: rgba(0,0,0,0.80);
   outline-style: none;
   color: #55ad9b;
 }

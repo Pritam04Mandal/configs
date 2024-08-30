@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "hyprlock",
+    "action" : "i3lock -i /home/pritam/Pictures/Wallpaper/wallpaper.png",
     "text" : "Lock",
     "keybind" : "l",
     "height": 1,
@@ -8,7 +8,7 @@
 }
 {
     "label" : "logout",
-    "action" : "hyprctl dispatch exit",
+    "action" : "i3 exit",
     "text" : "Logout",
     "keybind" : "e",
     "height": 1,
