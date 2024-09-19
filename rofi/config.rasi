@@ -19,7 +19,8 @@
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: "";
+    display-drun: " ";
+    display-clipboard: " ";
 }
 
 listview {
@@ -52,7 +53,7 @@ inputbar {
 }
 
 entry {
-    placeholder: "Search Apps";
+    placeholder: "Search ";
     text-color: @fg-color;
     placeholder-color: @fgp-color;
 }
