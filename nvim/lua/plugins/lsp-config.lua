@@ -10,7 +10,7 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         PATH = "prepend",
-        ensure_installed = { "lua_ls", "tsserver", "html","jdtls","tailwindcss"},
+        ensure_installed = { "lua_ls", "ts_ls", "html","jdtls","tailwindcss"},
       })
     end,
   },
@@ -25,7 +25,7 @@ return {
       lspconfig.html.setup({
         capabilities = capabilities
       })
-      lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         capabilities = capabilities,
       })
       lspconfig.jdtls.setup({
