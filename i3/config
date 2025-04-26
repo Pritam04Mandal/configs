@@ -54,7 +54,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -190,7 +190,7 @@ mode "resize" {
 #picon
 exec_always --no-startup-id picom
 #wallpaper
-exec_always --no-startup-id "feh --bg-fill /home/pritam/Pictures/Wallpaper/wallpaper.jpg"
+exec_always --no-startup-id "feh --bg-fill /home/pritam/Pictures/Wallpaper/wallpaper3.jpg"
 
 
 
@@ -220,24 +220,11 @@ bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-
 
 #External display setup
 exec_always xrandr --output HDMI-1 --mode 1920x1080
-exec_always xrandr --output eDP-1 --mode 1920x1080
+exec_always xrandr --output eDP-1 --mode 1680x1050
 exec_always xrandr --output HDMI-1 --same-as eDP-1
 bindsym $mod+p exec xrandr --output eDP-1 --off
 
 bar {
-	position top
-	status_command i3status -c ~/.config/i3/i3status.conf
-  # separator_symbol " "
-	height 22		
-
-	colors {
-		statusline	#000000
-		background	#000000
-		separator	#000000
-
-		#name              #border #bg     #text
-        	focused_workspace  #515151 #515151 #BBBBBB
-        	active_workspace   #0f1316 #0f1316 #BBBBBB
-	      	inactive_workspace #0f1316 #0f1316 #BBBBBB
-	}
+	mode hide
+	status_command polybar
 }
